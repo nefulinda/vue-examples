@@ -12,8 +12,23 @@
         <router-link to="/example02" id="viewApp02">Example02</router-link>
       </li>
       <li>
-        <router-link to="/example03" >Example02</router-link>
+        router with param
+        <ul>
+          <li>
+            <router-link to="/example03/students/2018/homeworks/0">
+              sid:2018;hid:0
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/example03/students/2020/homeworks/3">
+              sid:2022;hid:3
+            </router-link>
+          </li>
+        </ul>
       </li>
+      <ul>
+        <li><router-link to="/example03-02">keep-alive</router-link></li>
+      </ul>
     </ul>
   </div>
 </template>
